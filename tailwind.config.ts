@@ -8,10 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        "80vh": "80vh",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      keyframes: {
+        marqueeLeft: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        marqueeRight: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
+        },
+      },
+      animation: {
+        marqueeLeft: "marqueeLeft 20s linear infinite",
+        marqueeRight: "marqueeRight 20s linear infinite",
       },
     },
   },
