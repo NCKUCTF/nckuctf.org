@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
+import SubTitle from "./SubTitle";
 import MovingImageWall from "./MovingImageWall";
 import Button from "./Button";
 export default function Class() {
@@ -12,18 +13,16 @@ export default function Class() {
   return (
     <>
       <div className="container mx-auto px-4 pt-16" id="class">
-        <Title
+        <SubTitle
           className="mt-16 text-center lg:text-xl"
-          level="h2"
           text="由講師精心設計的課程"
         />
         <Title
-          className="mt-1 font-bold text-4xl text-center lg:text-3xl lg:mt-3 mb-8"
-          level="h1"
+          className="mt-1 font-bold text-2xl text-center lg:text-3xl lg:mt-3 mb-8"
           text="社課資訊"
         />
       </div>
-      <div className="relative flex flex-col items-center justify-center h-80vh">
+      <div className="relative flex flex-col items-center justify-center h-[80vh]">
         {isClient && (
           <video
             autoPlay

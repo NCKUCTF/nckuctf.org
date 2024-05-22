@@ -1,16 +1,15 @@
 import Title from "./Title";
+import SubTitle from "./SubTitle";
 export default function Award() {
   return (
     <>
       <div className="container mx-auto px-4 pt-16" id="award">
-        <Title
+        <SubTitle
           className="mt-16 text-center lg:text-xl"
-          level="h2"
           text="每個獎項後面都有一段故事"
         />
         <Title
           className="mt-1 font-bold text-4xl text-center lg:text-3xl lg:mt-3 mb-8"
-          level="h1"
           text="獲獎紀錄"
         />
         <div className="flex flex-col items-center justify-center gap-8 mt-8 lg:flex-row">

@@ -1,18 +1,17 @@
 import FeatureBox from "./FeatureBox";
+import SubTitle from "./SubTitle";
 import Title from "./Title";
 
 export default function About() {
   return (
     <>
       <div className="container mx-auto px-4 pt-16" id="about">
-        <Title
+        <SubTitle
           className="mt-16 text-center lg:text-xl"
-          level="h2"
           text="來自成大的資訊安全社團"
         />
         <Title
           className="mt-1 font-bold text-4xl text-center lg:text-3xl lg:mt-3 mb-8"
-          level="h1"
           text="關於我們"
         />
 
