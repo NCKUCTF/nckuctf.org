@@ -1,6 +1,8 @@
 // components/ProfileItem.ts
 import React from "react";
 import Image from "next/image";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 type ProfileItemProps = {
   avatarUrl: string;
@@ -23,15 +25,13 @@ const ProfileItem: React.FC<ProfileItemProps> = ({
         height={100}
         style={{ width: "100px", height: "100px" }}
       />
-      <p className="text-white break-words w-auto">
-        <b>{username}</b>
+      <p className="break-words w-auto">
+        <b className="font-bold mb-4">{username}</b>
         <br />
-        {description.split("\n").map((line, idx) => (
-          <React.Fragment key={idx}>
-            {line}
-            <br />
-          </React.Fragment>
-        ))}
+
+        <Markdown remarkPlugins={[remarkGfm]} className="prose markdown">
+          {description}
+        </Markdown>
       </p>
     </div>
   );

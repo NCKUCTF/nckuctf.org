@@ -12,8 +12,8 @@ export default function Visual() {
       {/*   }} */}
       {/* ></div> */}
 
-      <div className="container mx-auto flex h-full flex-col items-center justify-center gap-4 z-10 relative">
-        <Image src="/logo.png" alt="Logo" width={512} height={512} />
+      <div className="flex items-center justify-center h-screen">
+        <Image src="/visual2.png" alt="Logo" width={812} height={812} />
         {/* <div className="tracking-[.5em] lg:text-[24px] lg:tracking-[1em] text-white"> */}
         {/*   成大資安社 */}
         {/* </div> */}

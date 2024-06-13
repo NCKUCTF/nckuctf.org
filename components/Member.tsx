@@ -3,6 +3,7 @@ import SubTitle from "./SubTitle";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import ProfileItem from "./ProfileItem";
+import Markdown from "react-markdown";
 
 type Profile = {
   avatarUrl: string | undefined;
@@ -13,7 +14,7 @@ type Profile = {
 type MemberData = {
   core: Profile[];
   premium: Profile[];
-  normal: Profile[];
+  normal: [];
 };
 
 export default function Member() {
@@ -90,9 +91,9 @@ export default function Member() {
             <span className="select-none">{" }}"}</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {items?.premium.map((profile, index) => (
+            {items?.normal.map((username, index) => (
               <p className="text-white" key={index}>
-                {profile.username}
+                {username}
               </p>
             ))}
           </div>

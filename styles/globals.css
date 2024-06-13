@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&display=swap");
 
 :root {
   --foreground-rgb: 255, 255, 255;
@@ -24,6 +25,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.markdown a {
+  color: rgb(173, 216, 230);
+  text-decoration: underline;
 }
 
 @layer utilities {

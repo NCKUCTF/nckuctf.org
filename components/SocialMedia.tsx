@@ -31,7 +31,7 @@ const socialMediaData = [
 
 const SocialMediaLinks: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-8">
       {socialMediaData.map((media, index) => (
         <Link
           key={index}
@@ -50,7 +50,7 @@ const SocialMediaLinks: React.FC = () => {
             />
 
             <p
-              className="text-center text-lg"
+              className="text-center text-sm lg:text-lg"
               style={{
                 textShadow: "0 0 8px rgba(0,0,0,0.5)",
               }}
