@@ -37,6 +37,9 @@ const NavBar: React.FC = () => {
             <Link href="#about">關於我們</Link>
           </li>
           <li className="text-white hover:text-gray-300 px-3">
+            <Link href="#beapart">如何加入</Link>
+          </li>
+          <li className="text-white hover:text-gray-300 px-3">
             <Link href="#contact">聯絡方式</Link>
           </li>
           <li className="text-white hover:text-gray-300 px-3">
