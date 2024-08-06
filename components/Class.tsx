@@ -41,9 +41,8 @@ export default function Class() {
           <Button
             text="馬上看社課影片"
             onClick={() => {
-              alert("Hacked!");
-              window.location.href =
-                "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+              alert("NCKUCTF{Welcome_To_NCKUCTF_HITCON_Booth}!");
+              window.location.href = "https://www.youtube.com/@NCKUCTF";
             }}
           />
         </div>
