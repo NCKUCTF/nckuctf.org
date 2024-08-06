@@ -5,8 +5,6 @@ const nextConfig = {
     domains: ["www.gravatar.com"],
     unoptimized: true,
   },
-  trailingSlash: true,
-  basePath: "/",
 };
 
 console.log("url:", "https://localhost:3000");
