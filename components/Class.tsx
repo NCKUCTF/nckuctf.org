@@ -39,7 +39,7 @@ export default function Class() {
         </div>
         <div className="relative z-10">
           <Button
-            text="馬上看社課影片"
+            text="馬上看社課影片!"
             onClick={() => {
               alert("NCKUCTF{Welcome_To_NCKUCTF_HITCON_Booth}!");
               window.location.href = "https://www.youtube.com/@NCKUCTF";
